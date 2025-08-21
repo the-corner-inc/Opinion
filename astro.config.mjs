@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "Guidelines",
       social: [
         {
           icon: "github",
@@ -18,6 +18,14 @@ export default defineConfig({
         {
           label: "Rest API",
           autogenerate: { directory: "api" },
+        },
+        {
+          label: "Angular",
+          autogenerate: { directory: "angular" },
+        },
+        {
+          label: "CSS",
+          autogenerate: { directory: "css" },
         },
         {
           label: "Guides",
